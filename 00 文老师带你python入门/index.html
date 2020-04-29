@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ch-zh">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="文老师">
+
+
+
+
+
+<title>00文老师带你python入门.md | 文科班的编程课题</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">文科班的编程课堂</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/category">类别</a>
+                
+                    <a class="menu-item" href="/tag">标签</a>
+                
+                    <a class="menu-item" href="/">关于</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">文科班的编程课堂</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">文章</a>
+                
+                    <a class="menu-item" href="/category">类别</a>
+                
+                    <a class="menu-item" href="/tag">标签</a>
+                
+                    <a class="menu-item" href="/">关于</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">展开目录</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">回到底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "隐藏目录"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "展开目录"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">00文老师带你python入门.md</h1>
+            
+                <div class="post-meta">
+                    
+                        作者: <a itemprop="author" rel="author" href="/">文老师</a>
+                    
+
+                    
+                        <span class="post-time">
+                        发表时间 <a href="#">April 25, 2020&nbsp;&nbsp;20:39:02</a>
+                        </span>
+                        
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="00-文老师带你Python入门"><a href="#00-文老师带你Python入门" class="headerlink" title="00 文老师带你Python入门"></a>00 文老师带你Python入门</h1><p><img src="logo-round.png" alt="toto"></p>
+<blockquote>
+<p>大家好，我是文科班的编程老师，简称文老师。对，文科生都开始学习Python编程了，你还有什么理由不学习。</p>
+</blockquote>
+<h2 id="实际问题描述"><a href="#实际问题描述" class="headerlink" title="实际问题描述"></a>实际问题描述</h2><p>昨天，我们班的学习委员问我会不会Python。</p>
+<p>作为文科班的编程老师，今天我来带你Python入门。</p>
+<h2 id="零基础入门"><a href="#零基础入门" class="headerlink" title="零基础入门"></a>零基础入门</h2><h3 id="从高中数学说起"><a href="#从高中数学说起" class="headerlink" title="从高中数学说起"></a>从高中数学说起</h3><p>我们知道高中数学中的函数<code>y = x * 2</code>可以写成<code>f(x) = x * 2</code>,它代表给定一个自变量x，函数值是x的2倍。如果你理解这个，那编程入门不在话下。</p>
+<p>接下来，请大家下载Python编程利器<a href="https://www.jetbrains.com/pycharm/download" target="_blank" rel="noopener">PyCharm</a>，默认配置安装并打开。</p>
+<p><img src="capture.png" alt="PyCharm界面"></p>
+<p>如图所示，在命令行中敲下Python进入令人惊叹的<strong>解释器</strong>。接着输入（注意第二行return前有两个空格）。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(venv) ➜  PycharmProjects python</span><br><span class="line">Python <span class="number">3.7</span><span class="number">.5</span> (default, Nov  <span class="number">1</span> <span class="number">2019</span>, <span class="number">02</span>:<span class="number">16</span>:<span class="number">23</span>) </span><br><span class="line">[Clang <span class="number">11.0</span><span class="number">.0</span> (clang<span class="number">-1100.0</span><span class="number">.33</span><span class="number">.8</span>)] on darwin</span><br><span class="line">Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> <span class="keyword">or</span> <span class="string">"license"</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x)</span>:</span></span><br><span class="line"><span class="meta">... </span>  <span class="keyword">return</span> x * <span class="number">2</span></span><br><span class="line"><span class="meta">... </span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>继续输入f(2), 我们会得到结果4.</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>f(<span class="number">2</span>)</span><br><span class="line"><span class="number">4</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这就是一段简单的Python代码，它定义了刚才提到的数学函数，并且我们计算了当x=2时的函数值。</p>
+<p>我们也可以使用文件编辑器来编写代码，这样更方便。</p>
+<p>解释器中会反馈每次输入代码的执行结果。但运行Python文件时，如果文件中没有输出代码，并不会显示结果。所以如上图中所示，需要使用<code>print(f(2))</code>来显示计算的函数值。</p>
+<h3 id="Python中的方法"><a href="#Python中的方法" class="headerlink" title="Python中的方法"></a>Python中的方法</h3><p>若使用Python术语来描述，我们称f为<em>方法</em>，x为方法的<em>参数</em>。f(2)是指调用了方法f并传入了参数值2。</p>
+<blockquote>
+<p><strong>方法</strong>是一段有明确目的的代码块，由关键字<strong>def</strong>来定义，使用常见字符来命名。方法可有0个或者多个<strong>参数</strong>。方法中可以使用关键字<strong>return</strong>返回数据。方法中的代码块需要缩进，因为python语言使用规则的缩进来表达层次关系。</p>
+</blockquote>
+<p>下面的方法不需要解释，其意自明。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 求两数的平方和</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">square_sum</span><span class="params">(a, b)</span>:</span></span><br><span class="line">	<span class="keyword">return</span> a*a +b*b</span><br></pre></td></tr></table></figure>
+
+<p>Python中自带的<code>print</code>方法可以打印显示数据。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="number">123</span>)</span><br><span class="line"><span class="number">123</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Python中的基本数据类型"><a href="#Python中的基本数据类型" class="headerlink" title="Python中的基本数据类型"></a>Python中的基本数据类型</h3><p>高中数学中不止有数字，也有几何图形。类似地，Python语言中除了数值数据，还有其他类型的数据。</p>
+<ul>
+<li><p><code>123.456</code>是数值Number</p>
+</li>
+<li><p><code>&#39;abcdefg&#39;</code>用<code>&#39;</code> 引起来，就是字符串String。</p>
+</li>
+<li><p><code>[1,2,3,4,5]</code>多个数据放在中括号里，那就是列表List。</p>
+</li>
+<li><p><code>{1,2,3,4,5}</code>和数学中一样，称为集合Set。</p>
+</li>
+<li><p><code>(&#39;mr. wen&#39;, 666)</code>和列表类似，称为元组Tuple。</p>
+</li>
+<li><p><code>{&#39;mr. wen&#39;: 666}</code>形象地叫做字典Dictionary，左边是键Key，右边是值Value。</p>
+</li>
+</ul>
+<p>简单介绍到此，以后使用时再深入扩展。</p>
+<h3 id="Python中基本数学运算"><a href="#Python中基本数学运算" class="headerlink" title="Python中基本数学运算"></a>Python中基本数学运算</h3><p>我们一起来做几道题，大家猜测下结果，并在解释器中键入代码验证。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">1</span> + <span class="number">2</span>)</span><br><span class="line">print(<span class="number">1</span> - <span class="number">2</span>)</span><br><span class="line">print(<span class="number">1</span> * <span class="number">2</span>)</span><br><span class="line">print(<span class="number">1</span> / <span class="number">2</span>)</span><br><span class="line">print(<span class="number">2</span> ** <span class="number">3</span>)</span><br><span class="line">print(<span class="number">10</span> // <span class="number">3</span>)</span><br><span class="line">print(<span class="number">10</span> % <span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<p>几个需要解释的运算符</p>
+<ul>
+<li><code>**</code>，指数运算</li>
+<li><code>//</code>，整数除法，舍弃余数</li>
+<li><code>%</code>，求余数</li>
+</ul>
+<h3 id="Python中的流程控制"><a href="#Python中的流程控制" class="headerlink" title="Python中的流程控制"></a>Python中的流程控制</h3><p>再来几道题，我们歌词大作战，大家预测下输出结果，并在文件编辑器中键入代码运行来验证。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 爱我的请举手</span></span><br><span class="line"><span class="comment"># 爱我的请你点点头</span></span><br><span class="line"><span class="comment"># 爱我的请举起左手</span></span><br><span class="line"><span class="comment"># 我爱的请举右手</span></span><br><span class="line"><span class="comment">#    -- 莫文蔚 《爱我的请举手》</span></span><br><span class="line"></span><br><span class="line">love_me = <span class="literal">True</span></span><br><span class="line"><span class="keyword">if</span> love_me:</span><br><span class="line">    print(<span class="string">'举手'</span>)</span><br><span class="line"></span><br><span class="line">love_me = <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> love_me:</span><br><span class="line">    print(<span class="string">'点点头'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">'摇头'</span>)</span><br></pre></td></tr></table></figure>
+
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一步两步三步四步 望着天 看星星</span></span><br><span class="line"><span class="comment"># 一颗两颗三颗四颗 连成线 </span></span><br><span class="line"><span class="comment">#         -- 周杰伦《星晴》</span></span><br><span class="line"></span><br><span class="line">step = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> step &lt; <span class="number">5</span>:</span><br><span class="line">    print(str(step) + <span class="string">"步"</span>)</span><br><span class="line">    step = step + <span class="number">1</span></span><br><span class="line">print(<span class="string">"望着天 看星星"</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 黑的白的红的黄的 紫的绿的蓝的灰的 你的我的他的她的 大的小的圆的扁的</span></span><br><span class="line"><span class="comment">#         -- 许哲佩《气球》</span></span><br><span class="line">colors = [<span class="string">"黑的"</span>, <span class="string">"白的"</span>, <span class="string">"红的"</span>, <span class="string">"黄的"</span>, <span class="string">"紫的"</span>, <span class="string">"绿的"</span>, <span class="string">"蓝的"</span>, <span class="string">"灰的"</span>]</span><br><span class="line"><span class="keyword">for</span> color <span class="keyword">in</span> colors:</span><br><span class="line">    print(color)</span><br></pre></td></tr></table></figure>
+
+<p>至此Python语言的基本概念我们已经简单介绍完了。</p>
+<p>看来文科班的英文一如既往的棒，轻松看懂Python代码。</p>
+<h2 id="敲黑板，划重点"><a href="#敲黑板，划重点" class="headerlink" title="敲黑板，划重点"></a>敲黑板，划重点</h2><p>Python的基本数据类型有6种：</p>
+<ul>
+<li>Number</li>
+<li>String</li>
+<li>List</li>
+<li>Set</li>
+<li>Tuple</li>
+<li>Dictionary</li>
+</ul>
+<p>Python中的基本数学运算：</p>
+<ul>
+<li>+ - * /</li>
+<li>// </li>
+</ul>
+<hr>
+<ul>
+<li>%</li>
+</ul>
+<p>Python代码使用固定的缩进Indent来表达层次关系。</p>
+<p>Python使用<code>def</code>定义方法Method，拥有参数Argument，还可以返回Return结果。</p>
+<p>Python的基本流程控制语句有：</p>
+<ul>
+<li><code>if else</code> 条件分支</li>
+<li><code>while</code> 循环</li>
+<li><code>for</code> 循环</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>标签:</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">后退</a>
+                <span>· </span>
+                <a href="/">主页</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/01%20%E6%96%87%E8%80%81%E5%B8%88%E5%B8%A6%E4%BD%A0%E7%94%A8python%E5%81%9A%E7%BB%9F%E8%AE%A1/">01文老师带你用python做统计.md</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 文老师 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
